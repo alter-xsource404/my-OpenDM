@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>OpenDM options</title>
+<style>body{font:14px system-ui;max-width:520px;margin:30px auto}label{display:block;margin:12px 0}input[type=text],input[type=number]{width:100%;padding:6px}</style>
+<h2>OpenDM integration</h2>
+<p>In OpenDM click <b>Browser setup</b>, copy the token and paste it here.</p>
+<label>Pairing token <input id="token" type="text" autocomplete="off"></label>
+<label>Port <input id="port" type="number" min="1" max="65535"></label>
+<label>Ignore files smaller than (KB, 0 = capture all) <input id="min" type="number" min="0"></label>
+<label><input id="intercept" type="checkbox"> Capture browser downloads</label>
+<button id="save">Save &amp; test</button> <span id="msg"></span>
+<script src="options.js"></script>
